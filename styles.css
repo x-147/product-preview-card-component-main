@@ -94,3 +94,8 @@ body {
   height: 50px;
   border-radius: 15px;
 }
+
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: hsl(158, 42%, 18%);
+}
