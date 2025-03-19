@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
 }
 
 .img-container {
@@ -95,7 +96,32 @@ body {
   border-radius: 15px;
 }
 
+/* active state */
+
 .add-to-cart:hover {
   cursor: pointer;
   background-color: hsl(158, 42%, 18%);
+}
+
+/* responsive for mobile */
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  .img-container {
+    /* removes white space handling that can occur 
+    with inline or inline-block elements */
+    display: block;
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0px;
+  }
+
+  .text-container {
+    width: 350px;
+    border-radius: 0px 0px 10px 10px;
+  }
 }
